@@ -46,14 +46,12 @@ tbody th {
   text-align: right;
   left: 0;
 }
-
 col {
   width: 6em;
 }
 col.days  {
   background-color: rgb(148, 144, 144);
 }
-
 
 td:not(:empty) {
   border: 1px solid black;
