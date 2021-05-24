@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  position: relative;
+}
+
+
+caption {
+  caption-side: bottom;
+  margin-top: 1em;
+}
+
+thead th,
+tfoot th {
+  background-color: black;
+  color: white;
+}
+tbody th,
+tfoot th,
+thead th {
+  position: sticky;
+  table-layout: fixed;
+}
+
+tfoot th {
+  bottom: 0;
+}
+thead th {
+  top: 0;
+}
+tbody td {
+  background-color: silver;
+  text-align: center;
+}
+tbody th {
+  color: white;
+  text-align: right;
+  left: 0;
+}
+
+col {
+  width: 6em;
+}
+col.days  {
+  background-color: rgb(148, 144, 144);
+}
+
+
+td:not(:empty) {
+  border: 1px solid black;
+  background-color: white;
+}
+.Saturday, .Sunday,
+ tr.Saturday td:not(:empty), tr.Sunday td:not(:empty) {
+  background-color: turquoise;
+}
